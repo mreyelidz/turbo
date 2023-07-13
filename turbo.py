@@ -1,8 +1,8 @@
 import subprocess
 
 # Install Java docker using this command
-subprocess.run(["docker", "run", "-it", "--rm", "bellsoft/liberica-openjdk-alpine:latest", "java", "-version"])
-
+subprocess.run(["docker", "run", "-it", "--rm", "bellsoft/liberica-openjdk-alpine"])
+subprocess.run(["docker", "run", "-it", "bellsoft/liberica-openjdk-alpine"])
 # Create a file named basic.py with the given data
 with open("basic.py", "w") as f:
     f.write('''def queueRequests(target, wordlists):
