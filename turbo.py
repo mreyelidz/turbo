@@ -40,6 +40,4 @@ Post data (64 bytes)
 Type: application/x-www-form-urlencoded
 action=login&userName=admin&passWd=%s&country=N/A&city=N/A''')
 
-# Install Java docker using this command
-subprocess.run(["docker", "run", "-it", "bellsoft/liberica-openjdk-alpine"])
 subprocess.run(["java", "-jar", "turbo-intruder-all.jar", "basic.py", "request.txt"])
